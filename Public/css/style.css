@@ -1,0 +1,151 @@
+/*Template Name: Dashboard
+Author: Clean Heart
+Verson: 1.0.0
+*/
+
+/*Root Variable*/
+
+:root{
+  --primary-color:#2dbe60;
+  --text-color:#4c4d4d;
+  --secendory-color:#dee3e4;
+  --box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);;
+}
+
+/*******Theme Default*******/
+
+body{
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-color);
+  font-family:  'Rubik', sans-serif;
+}
+
+
+i{
+  line-height: 0;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+ul{
+  display: flex;
+  margin: 0;
+}
+li{
+  list-style-type:none;
+}
+.container{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*=========================
+  header section start hare
+  =========================
+*/
+header{
+  padding: 20px 0px;
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+}
+header .content-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .left{
+  display: flex;
+  align-items: center;
+}
+.nav-wrapper ul li{
+  padding: 5px 0.85em;
+}
+.nav-wrapper ul li a{
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5px 2px;
+  position: relative;
+  transition: 0.3s;
+}
+.nav-wrapper ul li a::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: 50%;
+  transition: 0.3s;
+}
+.nav-wrapper ul li a:hover::before{
+  width: 100%;
+  left: 0;
+}
+.nav-wrapper ul li a:hover{
+  color: var(--primary-color);
+}
+header .right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lan-change{
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.lan-change:hover{
+  color: var(--primary-color);
+}
+
+.notification .icon{
+  display: inline-block;
+  font-size: 21px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  animation: 2s tada infinite;
+}
+.notification .icon::before{
+  content: "3";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  box-sizing: var(--box-shadow);
+  background: #dc3545;
+  border-radius: 50%;
+  z-index: -1;
+  top: -11px;
+  left: 10px;
+}
+.notification .icon:hover{
+  color: var(--primary-color);
+}
+.profile-wrapper img{
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--text-color);
+  border-radius: 50%;
+}
+/*=========================
+  header section End hare
+  =========================
+*/

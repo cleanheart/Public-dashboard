@@ -1,0 +1,5 @@
+@media(max-width:991.90px){
+  header .nav-wrapper{
+    display: none;
+  }
+}
